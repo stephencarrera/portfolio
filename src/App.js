@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
 
-class App extends Component {
+const Container = styled.section`
+  background-color: #222222;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 0 192px;
+  width: 100vw;
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+`;
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Container>
+        <h1>Hello World 📦 🚀</h1>
+      </Container>
     );
   }
 }
-
-export default App;
